@@ -191,11 +191,6 @@ def multi(day):
     plt.title("\n".join(wrap(f'Fire(s): {title}',60))  + f'\nDate: {time}')
     
     
-    #("\n".join(wrap(f'Fires(s): {title}')))
-    
-    #plt.title(f'Fires(s): {title}', loc='left')
-    #plt.title('{}'.format(scan_start.strftime('%d %B %Y %H:%M UTC ')), loc='right')
-    
     plt.savefig(f'X:/geos17/{day}.png')
     plt.close() #got warning, this lowers ram usage
         
@@ -207,7 +202,6 @@ if __name__ == '__main__':
     pool = mp.Pool(cpu_count)
     for _ in tqdm(pool.imap_unordered(multi, [day for day in possible_days]), total = len(possible_days)):
         pass
-    #results = pool.map(multi, [patient for patient in PATIENTS]) #here we call the funtion and the list we want to pass
     
 
     pool.close()
