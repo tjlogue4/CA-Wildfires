@@ -184,11 +184,12 @@ def multi(day):
     # Name of fire
     
     names = wiki_table[(wiki_table['Start'] <= day) & (wiki_table['End'] >= day)]['Name'].tolist()
-    title = ', '.join(names)
+    #title = ', '.join(names)
 
     #took a while to figure this title out
     time = scan_start.strftime('%B %d %Y')
-    plt.title("\n".join(wrap(f'Fire(s): {title}',60))  + f'\nDate: {time}')
+    #plt.title("\n".join(wrap(f'Fire(s): {title}',60))  + f'\nDate: {time}')
+    plt.title(f'Total active fires: {len(names)}'  + f'\nDate: {time}')
     
     
     plt.savefig(f'X:/geos17/{day}.png')
