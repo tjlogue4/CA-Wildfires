@@ -2,7 +2,7 @@
 2020 California Wildfires
 ===================================
 
-I recently came across [Brian Blaylock's]((https://github.com/blaylockbk)) tutorial on [plotting fires](https://github.com/blaylockbk/pyBKB_v3/blob/master/BB_GOES/mapping_GOES16_FireTemperature.ipynb) captured on [NOAA GEOS-16/17](https://www.goes.noaa.gov/). I was able to use this to create a gif of all the fires that occurred in CA during the year 2020.
+I recently came across [Brian Blaylock's](https://github.com/blaylockbk) tutorial on [plotting fires](https://github.com/blaylockbk/pyBKB_v3/blob/master/BB_GOES/mapping_GOES16_FireTemperature.ipynb) captured on [NOAA GEOS-16/17](https://www.goes.noaa.gov/). I was able to use this to create a [gif](https://github.com/tjlogue4/CA-Wildfires/blob/main/ca_fires.gif) of all the fires that occurred in CA during the year 2020.
 
 
 
